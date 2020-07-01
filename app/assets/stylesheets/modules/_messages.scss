@@ -10,7 +10,7 @@
 .side-bar {
   background-color: #253141;
   width: 300px;
-  .side-bar__uesr-name {
+  &__uesr-name {
     background-color: #253141;
     height: 100px;
     padding: 0 20px;
@@ -28,7 +28,7 @@
         font-weight: bold;
         color: #ffffff;
       }
-      .side-bar__icon-list {
+      &__icon-list {
         width: 60px;
         display: flex;
         justify-content: end;
@@ -64,7 +64,7 @@
 .main-chat {
   background-color: #ffffff;
   width: calc(100vw - 300px);
-  .main-chat__group-info {
+  &__group-info {
     background-color: #ffffff;
     height: 100px;
     border-bottom: solid 1px #eeeeee;
@@ -100,7 +100,7 @@
     .main-chat__message {
       .main-chat__info {
         display: flex;
-        .main-chat__info-username {
+        &__info-username {
           color: #333333;
           font-size: 16px;
         }
@@ -113,7 +113,7 @@
       .main-chat__message-content {
         margin-bottom: 46px;
         margin-top: 12px;
-        .main-chat__content {
+        &__content {
           color: #434a54;
           font-size: 14px;
         }
