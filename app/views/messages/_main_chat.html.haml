@@ -1,4 +1,27 @@
 .main-chat
   .main-chat__group-info
+    .main-chat__group
+      .main-chat__group-name test
+      .main-chat__group-member Member : masa
+    %a.main-chat__edit{ :href => '#',} Edit
   .main-chat__message-list
+    .main-chat__message
+      .main-chat__info
+        .main-chat__info-username masa
+        .main-chat__info-day 2019xxxxxx
+      .main-chat__message-content
+        .main-chat__content おはよう！
+    .main-chat__message
+      .main-chat__info
+        .main-chat__info-username masa
+        .main-chat__info-day 2019xxxxxx
+      .main-chat__message-content
+        .main-chat__content こんにちは！
   .main-chat__message-form
+    %form.main-chat__form 
+      .main-chat__input-box
+        %input{type: "text", class: "main-chat__ib-text", placeholder: "type a message"}
+        %label{class: "main-chat__form-image"}
+          =icon('fas', 'image') 
+          %input{type: "file",class: "main-chat__image-file"}
+      %input{type: "submit", class: "submit-btn"}
