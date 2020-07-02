@@ -5,11 +5,14 @@
       = current_user.name
       %ulside-bar__icon-list
         %liside-bar__icon
-          = link_to "#", class: "side-bar__icon" do
+          = link_to new_group_path, class: "side-bar__icon" do
             =icon('fas', 'edit') 
           = link_to edit_user_path(current_user), class: "side-bar__icon" do
             =icon('fas', 'cog') 
   .side-bar__group-list
-    .side-bar__group
-      .side-bar__nema techcamp
-      .side-bar__message まだメッセージがありません
+    - current_user.groups.each do |group|
+      .side-bar__group
+        = link_to '#' do
+          .side-bar__nema
+            = group.name
+          .side-bar__message メッセージはまだありません
