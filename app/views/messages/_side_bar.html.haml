@@ -1,8 +1,8 @@
 .side-bar
   .side-bar__uesr-name
     .side-bar__uesr-list
-      .side-bar__name masa
-      = current_user.name
+      .side-bar__name 
+        = current_user.name
       %ulside-bar__icon-list
         %liside-bar__icon
           = link_to new_group_path, class: "side-bar__icon" do
@@ -12,7 +12,8 @@
   .side-bar__group-list
     - current_user.groups.each do |group|
       .side-bar__group
-        = link_to '#' do
+        = link_to group_messages_path(group) do
           .side-bar__nema
             = group.name
-          .side-bar__message メッセージはまだありません
+          .side-bar__message
+            = group.show_last_message
