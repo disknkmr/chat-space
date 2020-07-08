@@ -60,8 +60,6 @@ $(function () {
         alert("メッセージ送信に失敗しました");
       });
 
-    // $(".box").animate({ height: "200px" });
-
     $(".main-chat__message-list").animate({
       scrollTop: $(".main-chat__message-list")[0].scrollHeight,
     });
