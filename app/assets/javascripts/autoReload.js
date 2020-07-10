@@ -53,6 +53,7 @@ $(function () {
             insertHTML += buildHTML(message);
           });
           $(".main-chat__message").append(insertHTML);
+          $(".main-chat__message-list").delay(1000);
           $(".main-chat__message-list").animate({
             scrollTop: $(".main-chat__message-list")[0].scrollHeight,
           });
@@ -62,5 +63,5 @@ $(function () {
         alert("error");
       });
   };
-  setInterval(reloadMessages, 15000);
+  setInterval(reloadMessages, 7000);
 });
