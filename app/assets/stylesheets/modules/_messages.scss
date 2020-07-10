@@ -46,19 +46,19 @@
   background-color: #2f3e51;
   height: calc(100vh - 100px);
   padding: 0 20px;
-  text-decoration: none;
   .side-bar__group {
     padding: 20px 0 40px;
+  }
+  .side-bar__group a {
+    text-decoration: none;
   }
   .side-bar__nema {
     font-size: 15px;
     color: #ffffff;
-    font-weight: bold;
   }
   .side-bar__message {
     font-size: 11px;
     color: #ffffff;
-    font-weight: bold;
   }
 }
 
