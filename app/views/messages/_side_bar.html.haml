@@ -5,10 +5,10 @@
         = current_user.name
       %ulside-bar__icon-list
         %liside-bar__icon
-          = link_to new_group_path  do
-            %i.fas.fa-edit
-          = link_to edit_user_path(current_user) do
-            %i.fas.fa-cog
+          = link_to new_group_path, class: "side-bar__icon" do
+            =icon('fas', 'edit') 
+          = link_to edit_user_path(current_user), class: "side-bar__icon" do
+            =icon('fas', 'cog') 
   .side-bar__group-list
     - current_user.groups.each do |group|
       .side-bar__group
